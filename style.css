@@ -202,7 +202,7 @@
 		position: absolute;
 		left: 0;
 		right: 0;
-		transition: .25ms ease-in-out;
+		transition: .25s ease-in-out;
 	}
 
 	.nav-mobile-menu span:nth-child(1) {
@@ -246,6 +246,24 @@
 	.nav-mobile-menu.active-menu span:nth-child(3) {
 		transform: scale(0);
 	}
+
+	.navigation.active-menu {
+		opacity: 1;
+		visibility: visible;
+		transform: translateX(0);
+		padding: 20px;
+		/*відступ відображення пунктів бургер меню*/
+		background-color: black;
+		top: 80px;
+		/*рухаю бургер меню*/
+	}
+
+	.navigation.active-menu .menu {
+		flex-direction: column;
+	}
+
+
+
 
 	.developer_block,
 	.developer,
@@ -316,15 +334,15 @@
 
 .input-search-text {
 	width: 160px;
-	background-color: rgba(0, 0, 0, 0.85);
-	/* color: white; */
-	border: 1px solid white;
-	text-transform: uppercase;
-	font-size: 14px;
-	font-family: 'Open Sans', sans-serif;
 	height: 27px;
 	border-radius: 5px;
 	padding-left: 15px;
+	font-size: 14px;
+	background-color: rgba(0, 0, 0, 0.85);
+	border: 1px solid white;
+	text-transform: uppercase;
+	font-family: 'Open Sans', sans-serif;
+
 }
 
 .input-search-button {
@@ -407,3 +425,10 @@ html {
 	position: absolute;
 	left: -25px;
 }
+
+/*    font-size: 72px;
+    font-family: russo one;
+	     font-style: italic;
+		  word-break: break-word; ?
+		      font-size: 16px; для -
+		  */
