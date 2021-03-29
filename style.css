@@ -26,6 +26,7 @@
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	/* opacity: 1; */
 }
 
 .row {
@@ -37,6 +38,7 @@
 .main-row {
 	display: flex;
 	justify-content: center;
+	/* align-items: center; */
 }
 
 .slider_row {
@@ -129,6 +131,7 @@
 	display: flex;
 	justify-content: center;
 	padding: 50px;
+	/* border-bottom: 1px solid #000; */
 }
 
 .coach_centering {
@@ -139,6 +142,7 @@
 .coach_block {
 	display: flex;
 	flex-direction: column;
+	/* justify-content: center; */
 }
 
 .coach_title {
@@ -182,6 +186,13 @@
 	background-color: #f33;
 	border: none;
 }
+
+
+
+
+
+
+
 
 
 
@@ -279,6 +290,18 @@
 }
 
 
+
+
+
+
+
+
+
+
+
+
+
+
 /*-----MOBILE----------------------------------------------*/
 @media(max-width:767px) {
 	.header-row {
@@ -301,6 +324,7 @@
 
 	.menu {
 		overflow: auto;
+		/* white-space: nowrap; */
 	}
 
 	/*----------------------------BURGER-MENU-----------------------------------------------*/
@@ -309,6 +333,7 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
+
 
 	.nav-mobile-menu {
 		width: 15px;
@@ -389,6 +414,7 @@
 	.social_network {
 		display: flex;
 		justify-content: center;
+		/* padding: 5px; */
 	}
 
 	.developer {
@@ -404,6 +430,10 @@
 	.about_main {
 		padding: 25px 5px 25px 5px;
 		border-bottom: 1px solid #000;
+	}
+
+	.image_about {
+		/* flex-wrap: wrap; */
 	}
 
 	.img_about_mob {
@@ -435,14 +465,25 @@
 		width: 300px;
 		height: 350px;
 	}
+
+
 }
 
 /*--------------------------END MOBILE-------------------------------*/
+
+
+
+
 
 .logo-img {
 	width: 200px;
 	height: 60px;
 	margin: 10px 0;
+	/* position: relative; */
+	/* z-index: 1; */
+	/* padding: 15px; */
+	/* margin-top: 10px;
+	margin-bottom: 10px; */
 }
 
 .menu {
@@ -527,7 +568,19 @@ input::placeholder {
 	font-size: 65px;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-style: italic;
+	/* display: flex; */
+	/* align-items: flex-end; */
+	/* height: 500px; */
 }
+
+
+
+
+
+
+
+
+
 
 html {
 	overflow-x: hidden;
@@ -582,12 +635,16 @@ html {
 	background-image: url("images_mma/Main Site/section_1.jpg");
 	background-size: 100% 100%;
 	display: flex;
+	/* justify-content: center; */
 	align-items: center;
 }
+
+
 
 .col_flex {
 	display: flex;
 	flex-direction: column;
+	/* justify-content: center; */
 	align-items: center;
 }
 
@@ -608,6 +665,7 @@ html {
 
 .mma_club {
 	margin: 5px;
+	/* height: 200px; */
 	font-size: 65px;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-style: italic;
@@ -633,9 +691,16 @@ html {
 
 /*----------------------------------------------------*/
 
+
+
 .text_about_block {
 	display: flex;
 	flex-direction: column;
+	/* flex-wrap: wrap; */
+}
+
+.image_about {
+	/* display: flex; */
 }
 
 .title_about {
@@ -650,6 +715,10 @@ html {
 	color: black;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 20px;
+}
+
+.coach_main {
+	/* background-color: rgba(0, 0, 0, 0.95); */
 }
 
 .slick-list {
@@ -667,6 +736,15 @@ html {
 	height: 350px;
 }
 
+/* .slide_img {
+	width: 450px;
+	height: 350px;
+} */
+
 .slick-track {
 	display: flex;
 }
+
+/* .slider_item {
+	text-align: center;
+} */
