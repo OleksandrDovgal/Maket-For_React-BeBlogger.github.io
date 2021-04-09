@@ -3,7 +3,7 @@
 }
 
 .header {
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: #313832;
 	color: white;
 	border-bottom: 1px solid white;
 	position: sticky;
@@ -19,7 +19,7 @@
 }
 
 .header-container {
-	padding: 15px;
+	padding: 15px 15px 5px 15px;
 }
 
 .main-container {
@@ -37,13 +37,14 @@
 
 .main-row {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	/* align-items: center; */
 }
 
-.slider_row {
+/* .slider_row {
 	padding: 20px 0;
-}
+} */
 
 [class*="col-"] {
 	padding-left: 15px;
@@ -110,12 +111,23 @@
 	max-width: 100%;
 }
 
+.image_about {
+	display: flex;
+	justify-content: center;
+	text-align: center;
+}
+
 .img_about {
-	width: 450px;
-	height: 350px;
+	display: flex;
+	justify-content: center;
+	text-align: center;
+	/* width: 955px;
+	height: 600px; */
 }
 
 .about_main {
+	display: flex;
+	justify-content: center;
 	padding: 60px;
 	border-bottom: 1px solid #000;
 }
@@ -182,9 +194,11 @@
 	width: 65%;
 	height: 50px;
 	font-size: 24px;
-	color: white;
-	background-color: #f33;
+	color: black;
+	background-color: white;
 	border: none;
+	/* background-image: url(https://themes.muffingroup.com/be/blogger3/wp-content/uploads/2019/10/blogger3-adventure-icon.png);
+	background-repeat: no-repeat; */
 }
 
 
@@ -201,9 +215,9 @@
 		max-width: 720px;
 	}
 
-	.col-xs-hidden {
+	/* .col-xs-hidden {
 		display: none;
-	}
+	} */
 
 	.col-sm-1 {
 		flex: 0 0 8.33333%;
@@ -240,17 +254,33 @@
 		max-width: 58.33333%;
 	}
 
+	.col-sm-8 {
+		flex: 0 0 66.66667%;
+		max-width: 66.66667%;
+	}
+
+	.col-sm-9 {
+		flex: 0 0 75%;
+		max-width: 75%;
+	}
+
 	.menu {
-		padding: 25px;
+		padding-bottom: 25px;
+		padding-right: 25px;
 	}
 
 	.text_about_block {
-		margin-left: 35px;
+		/* margin-left: 35px; */
 	}
 
 	.image_about {
-		margin-right: 20px;
+		/* margin-right: 20px; */
 	}
+
+	/* .img_about {
+		width: 450px;
+		height: 300px;
+	} */
 
 	.about_main {
 		display: flex;
@@ -277,9 +307,9 @@
 		max-width: 960px;
 	}
 
-	.col-xs-hidden {
+	/* .col-xs-hidden {
 		display: flex;
-	}
+	} */
 }
 
 
@@ -295,15 +325,12 @@
 
 
 
-
-
-
-
-
-
-
 /*-----MOBILE----------------------------------------------*/
 @media(max-width:767px) {
+	/* .header-container {
+		padding: 10px;
+	} */
+
 	.header-row {
 		flex-wrap: wrap;
 		justify-content: space-between;
@@ -313,8 +340,9 @@
 		flex-wrap: wrap;
 	}
 
-	.col-xs-hidden {
-		display: none;
+	.footer-row {
+		flex-wrap: wrap;
+		justify-content: space-between;
 	}
 
 	.logo {
@@ -398,8 +426,8 @@
 		transform: translateX(0);
 		padding: 20px;
 		/*відступ відображення пунктів бургер меню*/
-		background-color: rgba(0, 0, 0, 0.95);
-		top: 80px;
+		background-color: #313832;
+		top: 51px;
 		/*рухаю бургер меню*/
 	}
 
@@ -461,23 +489,15 @@
 		padding: 15px;
 	}
 
-	.slide_img_mob {
-		width: 300px;
-		height: 350px;
-	}
-
-
 }
 
 /*--------------------------END MOBILE-------------------------------*/
 
 
 
-
-
 .logo-img {
-	width: 200px;
-	height: 60px;
+	/* width: 200px;
+	height: 60px; */
 	margin: 10px 0;
 	/* position: relative; */
 	/* z-index: 1; */
@@ -502,7 +522,6 @@
 .menu>li>a {
 	text-decoration: none;
 	color: white;
-	text-transform: uppercase;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
 	padding: 4px 10px;
@@ -510,11 +529,11 @@
 }
 
 .menu>li>a:hover {
-	color: #ff3333;
+	color: #966d14;
 	border: 1px solid white;
 }
 
-.form-serch {
+/* .form-serch {
 	display: flex;
 	align-items: center;
 }
@@ -559,7 +578,7 @@ input::placeholder {
 
 .input-search-button:focus {
 	outline: none;
-}
+} */
 
 /*------------------КАРТА------------------------*/
 .black_title {
@@ -573,11 +592,7 @@ input::placeholder {
 	/* height: 500px; */
 }
 
-
-
-
-
-
+/*------------------КАРТА----КІНЕЦЬ--------------------*/
 
 
 
@@ -593,7 +608,7 @@ html {
 }
 
 .footer {
-	background-color: rgba(0, 0, 0, 0.95);
+	background-color: #313832;
 	color: white;
 }
 
@@ -624,7 +639,7 @@ html {
 }
 
 .icon {
-	background-image: url("images_mma/header/mobile-img-16.png");
+	background-image: url("images/Logo/mobile-img-16.png");
 	background-repeat: no-repeat;
 	position: absolute;
 	left: -25px;
@@ -632,29 +647,20 @@ html {
 
 .preview_block {
 	height: 640px;
-	background-image: url("images_mma/Main Site/section_1.jpg");
+	background-image: url("images/1-Adventure/Adventure_1.jpg");
 	background-size: 100% 100%;
+	/* background: rgba(105, 103, 103, 0.1); */
+	background-color: rgba(228, 222, 222, 0.9);
 	display: flex;
 	/* justify-content: center; */
 	align-items: center;
 }
-
-
 
 .col_flex {
 	display: flex;
 	flex-direction: column;
-	/* justify-content: center; */
+	justify-content: center;
 	align-items: center;
-}
-
-.fight_school {
-	margin-right: 30px;
-	margin-bottom: 50px;
-	font-family: 'Quattrocento Sans', sans-serif;
-	color: white;
-	text-transform: uppercase;
-	font-size: 20px;
 }
 
 .fight_club {
@@ -664,28 +670,14 @@ html {
 }
 
 .mma_club {
-	margin: 5px;
-	/* height: 200px; */
 	font-size: 65px;
 	font-family: 'Quattrocento Sans', sans-serif;
-	font-style: italic;
 	color: white;
-}
-
-.red {
-	color: red;
-}
-
-.description {
-	margin: 50px;
-	color: white;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 20px;
 }
 
 #btn-sign:hover {
-	background-color: white;
-	color: #ff3333;
+	background-color: #966d14;
+	color: white;
 	cursor: pointer;
 }
 
@@ -694,57 +686,76 @@ html {
 
 
 .text_about_block {
+	width: 300px;
 	display: flex;
+	justify-content: center;
 	flex-direction: column;
-	/* flex-wrap: wrap; */
+	flex-wrap: wrap;
+	padding: 0px 10px 10px 25px;
+	background-color: #505b4e;
+}
+
+.category {
+	width: max-content;
+	color: white;
+	padding: 5px;
+	margin: 10px;
+	border: 0px solid black;
+	font-family: 'Quattrocento Sans', sans-serif;
+	border-radius: 25px;
+	background-color: #62725f;
+	cursor: pointer;
+}
+
+.category:hover {
+	color: #966d14;
+	background-color: #fff;
+	padding: 4px 10px;
+	border-radius: 10px;
+	border: 1px solid white;
 }
 
 .image_about {
-	/* display: flex; */
+	display: flex;
+	justify-content: center;
 }
 
 .title_about {
-	margin-bottom: 5px;
-	font-size: 65px;
+	margin: 10px 0px;
+	font-size: 34px;
+	font-weight: bold;
 	font-family: 'Quattrocento Sans', sans-serif;
-	font-style: italic;
-	color: black;
+	color: white;
 }
 
 .text_about {
-	color: black;
+	display: flex;
+	flex-wrap: wrap;
+	margin: 5px 0px;
+	color: white;
 	font-family: 'Quattrocento Sans', sans-serif;
 	font-size: 20px;
 }
 
-.coach_main {
-	/* background-color: rgba(0, 0, 0, 0.95); */
-}
-
-.slick-list {
-	position: relative;
-	z-index: -1;
-}
-
-.slick-prev:before,
-.slick-next:before {
-	color: black;
-}
-
-.slide_img {
-	width: 300px;
-	height: 350px;
-}
-
-/* .slide_img {
-	width: 450px;
-	height: 350px;
-} */
-
-.slick-track {
+.btn_read_more {
 	display: flex;
+	flex-wrap: wrap;
+	justify-content: center;
+	margin: 15px;
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: white;
+	background-color: #62725f;
+	border: none;
+	font-family: 'Quattrocento Sans', sans-serif;
+	font-size: 20px;
+	cursor: pointer;
 }
 
-/* .slider_item {
-	text-align: center;
-} */
+.btn_read_more:hover {
+	color: #966d14;
+	background-color: #fff;
+	padding: 4px 10px;
+	border-radius: 10px;
+	border: 1px solid white;
+}
