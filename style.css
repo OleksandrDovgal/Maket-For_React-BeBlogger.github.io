@@ -115,8 +115,6 @@
 	display: flex;
 	justify-content: center;
 	text-align: center;
-	/* width: 955px;
-	height: 600px; */
 }
 
 .about_main {
@@ -125,82 +123,6 @@
 	padding: 60px;
 	border-bottom: 1px solid #000;
 }
-
-.coach_section {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-	background-color: #333;
-}
-
-.coach_main {
-	display: flex;
-	justify-content: center;
-	padding: 50px;
-	/* border-bottom: 1px solid #000; */
-}
-
-.coach_centering {
-	display: flex;
-	justify-content: center;
-}
-
-.coach_block {
-	display: flex;
-	flex-direction: column;
-	/* justify-content: center; */
-}
-
-.coach_title {
-	display: flex;
-	justify-content: center;
-	margin-bottom: 5px;
-	font-size: 65px;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-style: italic;
-	color: white;
-}
-
-.coach_text {
-	color: white;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-size: 20px;
-	margin-bottom: 10px;
-}
-
-.coach_img_block {
-	display: flex;
-	justify-content: center;
-}
-
-.coach_img {
-	display: flex;
-	flex-wrap: wrap;
-	padding: 10px;
-}
-
-.coach_img:hover {
-	opacity: 0.5;
-}
-
-.btn-sign-up {
-	display: block;
-	width: 65%;
-	height: 50px;
-	font-size: 24px;
-	color: black;
-	background-color: white;
-	border: none;
-}
-
-
-
-
-
-
-
-
-
 
 @media(min-width:768px) {
 	.container {
@@ -260,21 +182,6 @@
 	.about_main {
 		display: flex;
 	}
-
-	.coach_main {
-		display: flex;
-	}
-
-	.coach_img_block,
-	.coach_img {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.btn-sign-up {
-		width: 100%;
-	}
-
 }
 
 @media(min-width:992px) {
@@ -283,18 +190,11 @@
 	}
 }
 
-
 @media(min-width:1200px) {
 	.container {
 		max-width: 1140px;
 	}
 }
-
-
-
-
-
-
 
 /*-----MOBILE----------------------------------------------*/
 @media(max-width:767px) {
@@ -319,7 +219,6 @@
 
 	.menu {
 		overflow: auto;
-		/* white-space: nowrap; */
 	}
 
 	/*----------------------------BURGER-MENU-----------------------------------------------*/
@@ -328,7 +227,6 @@
 		align-items: center;
 		justify-content: flex-end;
 	}
-
 
 	.nav-mobile-menu {
 		width: 15px;
@@ -415,7 +313,7 @@
 		text-align: center;
 	}
 
-	.mma_club {
+	.main_title_section {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
@@ -440,22 +338,9 @@
 	.title_about {
 		margin-top: 10px;
 	}
-
-	.coach_img_block,
-	.coach_img {
-		display: flex;
-		flex-wrap: wrap;
-	}
-
-	.coach_main {
-		padding: 15px;
-	}
-
 }
 
 /*--------------------------END MOBILE-------------------------------*/
-
-
 
 .logo-img {
 	margin: 10px 0;
@@ -468,10 +353,8 @@
 	align-items: center;
 }
 
-/*------------------------------------------*/
-
 .menu>li {
-	padding: 4px;
+	padding: 5px;
 }
 
 .menu>li>a {
@@ -479,26 +362,13 @@
 	color: white;
 	font-size: 16px;
 	font-family: 'Open Sans', sans-serif;
-	padding: 4px 10px;
-	border-radius: 10px;
+	padding: 5px 10px;
+	border-radius: 25px;
 }
 
 .menu>li>a:hover {
 	color: #966d14;
-	border: 1px solid white;
 }
-
-/*------------------КАРТА------------------------*/
-.black_title {
-	text-align: center;
-	padding: 10px;
-	font-size: 65px;
-	font-family: 'Quattrocento Sans', sans-serif;
-	font-style: italic;
-}
-
-/*------------------КАРТА----КІНЕЦЬ--------------------*/
-
 
 html {
 	overflow-x: hidden;
@@ -550,7 +420,7 @@ html {
 
 .preview_block {
 	height: 640px;
-	background-image: url("images/1-Adventure/Adventure_1.jpg");
+	background-image: url("images/2-Place/Place_2.jpg");
 	background-size: 100% 100%;
 	background-color: rgba(228, 222, 222, 0.9);
 	display: flex;
@@ -564,13 +434,13 @@ html {
 	align-items: center;
 }
 
-.fight_club {
+.section_block_title {
 	display: flex;
 	justify-content: center;
 	flex-wrap: nowrap;
 }
 
-.mma_club {
+.main_title_section {
 	font-size: 65px;
 	font-family: 'Quattrocento Sans', sans-serif;
 	color: white;
@@ -598,8 +468,8 @@ html {
 .category {
 	width: max-content;
 	color: white;
-	padding: 5px;
-	margin: 10px;
+	padding: 10px;
+	margin: 15px 0px;
 	border: 0px solid black;
 	font-family: 'Quattrocento Sans', sans-serif;
 	border-radius: 25px;
@@ -610,9 +480,8 @@ html {
 .category:hover {
 	color: #966d14;
 	background-color: #fff;
-	padding: 4px 10px;
-	border-radius: 10px;
-	border: 1px solid white;
+	padding: 10px;
+	border-radius: 25px;
 }
 
 .image_about {
@@ -621,7 +490,7 @@ html {
 }
 
 .title_about {
-	margin: 10px 0px;
+	margin: 5px 0px;
 	font-size: 34px;
 	font-weight: bold;
 	font-family: 'Quattrocento Sans', sans-serif;
@@ -643,7 +512,7 @@ html {
 	justify-content: center;
 	margin: 15px;
 	padding: 5px 10px;
-	border-radius: 10px;
+	border-radius: 25px;
 	color: white;
 	background-color: #62725f;
 	border: none;
@@ -656,6 +525,6 @@ html {
 	color: #966d14;
 	background-color: #fff;
 	padding: 4px 10px;
-	border-radius: 10px;
+	border-radius: 25px;
 	border: 1px solid white;
 }
